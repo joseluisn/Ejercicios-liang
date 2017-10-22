@@ -21,29 +21,17 @@ public class Cap11 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Scanner input = new Scanner(System.in);
+       Person person = new Person("person");
+        Student student = new Student("student");
+        Employee employee = new Employee("employee");
+        Faculty faculty = new Faculty("faculty");
+        Staff staff = new Staff("staff");
 
-        System.out.print("Enter three sides of a triangle: ");
-        double side1 = input.nextDouble();
-        double side2 = input.nextDouble();
-        double side3 = input.nextDouble();
-
-        System.out.print("Enter a triangle color: ");
-        String color = input.next();
-        System.out.print("Is the triangle filled? true/false: ");
-        String isFilledString = input.next();
-        boolean isFilled = (isFilledString.equals("true"));
-
-        Triangle t1 = new Triangle();
-
-        t1.setColor(color);
-        t1.setFilled(isFilled);
-        System.out.println("Triangle 1:");
-
-        System.out.println("Area = " + t1.getArea());
-        System.out.println("Perimeter = " + t1.getPerimeter());
-        System.out.println("Color = " + t1.getColor());
-        System.out.println("Is filled? " + t1.isFilled());
+        System.out.println(person.toString());
+        System.out.println(student.toString());
+        System.out.println(employee.toString());
+        System.out.println(faculty.toString());
+        System.out.println(staff.toString()); 
 
     }
 
