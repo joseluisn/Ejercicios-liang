@@ -21,17 +21,13 @@ public class Cap11 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-       Person person = new Person("person");
-        Student student = new Student("student");
-        Employee employee = new Employee("employee");
-        Faculty faculty = new Faculty("faculty");
-        Staff staff = new Staff("staff");
+        Account account = new Account(111, 500);
+        CheckingAccount checkingAccount = new CheckingAccount(112, 550);
+        SavingsAccount savingsAccount = new SavingsAccount(113, 600);
 
-        System.out.println(person.toString());
-        System.out.println(student.toString());
-        System.out.println(employee.toString());
-        System.out.println(faculty.toString());
-        System.out.println(staff.toString()); 
+        System.out.println(account);
+        System.out.println(checkingAccount);
+        System.out.println(savingsAccount);
 
     }
 
